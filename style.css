@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+*{
+    font-family:"Graduate",serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin:0;
+}
+
+body{
+    background-color: #fff;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0f0f0f;
+    align-items: center;
+    z-index:100;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 35px;
+}
+
+.navbar{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color:#fff;
+    margin-right: 35px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.navbar a:hover{
+    color: aquamarine;
+}
+
+.links{
+    position: fixed;
+    top: 10%;
+}
+
+.links ul{
+    list-style: none;
+    justify-content: space-between;
+}
+
+.links a{
+    color: #0f0f0f;
+}
+
+
+
+
+
+@media only screen and (max-width:999px){
+
+}
