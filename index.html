@@ -5,41 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nitesh Neupane</title>
     <link rel="stylesheet" href="style.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
 </head>
 <body>
     <header class="header">
-        <div class="nav">
-
-            <a href="#" class="logo">Nitesh Neupane</a>
-            
-            <nav>
-                <div class="navbar">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Skill</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Contact</a>
-                </div>
-            </nav>
         
-        </div>
+        <nav id="nav">
+
+            <a href="index.html" class="logo">Nitesh Neupane</a>
+            <div >    
+                <ul class="navbar">   
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Skill</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="mailto:niteshneupane.16@gmail.com" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="toggleNav">
+            
+            <a href="index.html" class="logo">Nitesh Neupane</a>
+            
+            <div class="menu">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div>
+                    <ul class="navbarScreen" >   
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Skill</a>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="mailto:niteshneupane.16@gmail.com">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section>
-    <div class="links">
-        <ul>
-            <li><a href=""><i class="fi fi-brands-linkedin"></i></a></li>
-            <li><a href=""><i class="fi fi-brands-youtube"></i></a></li>
-            <li><a href=""><i class="fi fi-brands-facebook"></i></a></li>
-            <li><a href=""><i class="fi fi-rr-envelope"></i></a></li>
-        </ul>
+    <section id="profile">
+    <div class="picContainer">
+        <img src="./assets/main attraction.png" alt="Nitesh Neupane intro picture">
     </div>
-    <div class="container">
-
+    <div class="section_text">
+        <p class="st_p1">Hello, I'm</p>
+        <h1 class="title">Nitesh Neupane</h1>
+        <p class="st_p2">Engineering Student</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href('./#contact')">Contact Info</button>
+        </div>
+        <div class="social-container">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/nitesh-neupane/" target="_blank" alt="My linkedin profile"><i class="fi fi-brands-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com/@noobneutron/videos" target="_blank" alt="My youtube channel"><i class="fi fi-brands-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/niteshneupanee" target="_blank" alt="My facebook account"><i class="fi fi-brands-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/nitesh_neupaneeee/" target="_blank" alt="My instagram"><i class="fi fi-brands-instagram"></i></a></li>
+                <li><a href="https://twitter.com/noobneutron" target="_blank" alt="My twitter/X"><i class="fi fi-brands-twitter"></i></a></li>
+            </ul>
+        </div>
     </div>
 </section>
 
+<section id="about">
+    <p class="st_p1">Get To Know More</p>
+    <h1 class="title">About me</h1>
+    <div class="section-container">
+        <img src="./assets/img_1.png" style="border:1rem solid black; height:700px;" alt="Profile picture" class="about-pic">
+    </div>
+    <div class="about-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="script.js"></script>
 </body>
 </html>
